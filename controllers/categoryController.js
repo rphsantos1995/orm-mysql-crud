@@ -22,7 +22,4 @@ category.get('/', validateJWT, rescue(async (req, res) => {
   return res.status(200).json(allCategories);
 }));
 
-
-
-
 module.exports = category;
