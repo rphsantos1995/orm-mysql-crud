@@ -7,6 +7,10 @@ const userSchema = Joi.object({
   image: Joi.any(),
 });
 
+const categorySchema = Joi.object({
+  name: Joi.string().min(3).required(),
+});
+
 const loginSchema = Joi.object({
   email: Joi.string().email().required(),
   password: Joi.string().required(),
@@ -15,4 +19,5 @@ const loginSchema = Joi.object({
 module.exports = {
   userSchema,
   loginSchema,
+  categorySchema,
 };
