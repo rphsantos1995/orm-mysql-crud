@@ -39,8 +39,7 @@ const getAllPosts = async () => {
 
 const getPostById = async () => {
 
-}
-
+};
 
 module.exports = {
   createBlogPost,
