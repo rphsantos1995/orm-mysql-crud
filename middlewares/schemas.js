@@ -11,13 +11,21 @@ const categorySchema = Joi.object({
   name: Joi.string().min(3).required(),
 });
 
+const postSchema = Joi.object({
+  title: Joi.string().min(3).required(),
+  content: Joi.string().min(3).required(),
+  categoryIds: Joi.array().required(),
+});
+
 const loginSchema = Joi.object({
   email: Joi.string().email().required(),
   password: Joi.string().required(),
+  
 });
 
 module.exports = {
   userSchema,
   loginSchema,
   categorySchema,
+  postSchema
 };
