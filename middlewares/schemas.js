@@ -27,5 +27,5 @@ module.exports = {
   userSchema,
   loginSchema,
   categorySchema,
-  postSchema
+  postSchema,
 };

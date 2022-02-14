@@ -9,7 +9,6 @@ const loginController = require('./controllers/loginController');
 const categoryController = require('./controllers/categoryController');
 const blogPostController = require('./controllers/blogPostController');
 
-
 app.use(bodyParser.json());
 
 app.listen(3000, () => console.log(new Date(), 'ouvindo porta 3000!'));
@@ -23,6 +22,5 @@ app.use('/user', userController);
 app.use('/login', loginController);
 app.use('/categories', categoryController);
 app.use('/post', blogPostController);
-
 
 app.use(errorMiddleware);
